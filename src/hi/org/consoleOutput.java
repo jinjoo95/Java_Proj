@@ -50,7 +50,24 @@ public class consoleOutput {
 		//변수 선언 :
 		//자료형 변수명 = 초기값 ;
 		//String str = null;
-		System.out.println("");
-
+		
+		
+	//2. System.out.print();    <== 출력 후 개행하지 않는다. 
+		
+		System.out.println("안녕");
+		System.out.println("하세요\n");
+		
+		System.out.println("=============================");
+		
+	// 3. System.out.printf();     <-- 자료형 포맷에 따라 출력을 할 수 있다.
+		System.out.printf("%d\n", 30);       //%d  : 10진수로 출력
+		System.out.printf("%o\n", 30);   // %o  : 8진수로 출력
+		System.out.printf("%x\n", 30);   // %x : 16진수로 출력
+	  	
+		System.out.printf("%s \n" , "문자열 출력");  // %s 문자열을 출력
+		System.out.printf("%f \n", 5.8);            //%f 실수를 가지고 올떄
+		System.out.printf("4.2f \n, 5.8");         // %4.2f : 전체 4자리 소수점이하 2자리
+		System.out.printf("%d 와 %4.2f 를 출력 합니다. " , 4, 5.8 );
+   
 }
 }
